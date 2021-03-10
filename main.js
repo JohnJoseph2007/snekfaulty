@@ -51,7 +51,7 @@ function draw() {
     }
     
     newHead={x:snakex, y:snakey};
-    snake.push(newHead);
+    snake.unshift(newHead);
 
     if(snake[0].x===food.x&&snake[0].y===food.y) {
         food={
